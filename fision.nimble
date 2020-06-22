@@ -76,5 +76,5 @@ requires "nim >= 1.2.2",
 
 version     = "2020.06.22"
 author      = "Juan Carlos"
-description = "Official important_packages with 0 dependencies and all unittests passing"
+description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
