@@ -19,6 +19,11 @@ jobs:
         export PATH=$HOME/.nimble/bin:$PATH
         nim c fision.nim
 
+    - name: Run
+      run: |
+        export PATH=$HOME/.nimble/bin:$PATH
+        ./fision
+
     - uses: stefanzweifel/git-auto-commit-action@v4.1.3
       with:
         commit_message: Fully Automated Luxury Fision
