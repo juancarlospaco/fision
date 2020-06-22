@@ -10,7 +10,6 @@ requires "nim >= 1.2.2",
   "cligen",
   "combparser",
   "compactdict",
-  "comprehension",
   "dashing",
   "delaunay",
   "docopt",
@@ -68,11 +67,10 @@ requires "nim >= 1.2.2",
   "unicodedb",
   "unpack",
   "websocket",
-  "with",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:00:28
+#END 2020-06-22T07:33:19
 
 version     = "2020.06.22"
 author      = "Juan Carlos"

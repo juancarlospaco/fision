@@ -1,19 +1,18 @@
 import strutils, sequtils, algorithm, strformat
 
 const
-  blockList = ["comprehension", "with"] # Packages with problems to install of some kind.
+  blockList = ["\"comprehension\"", "\"with\""] # Packages with problems to install of some kind.
   url = "https://raw.githubusercontent.com/nim-lang/Nim/devel/testament/important_packages.nim"
   code = staticExec("curl " & url).strip.splitLines
+  pkgs = filterIt(code, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true")))
+  fltr = map(pkgs, proc(s: string): string = s.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip)
+  packages = filterIt(fltr, it notin blockList).sorted.join(",\n  ")
 
-var packages = code
-packages = filterIt(packages, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true")))
-packages = mapIt(packages, it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip)
-packages = filterIt(packages, it notin blockList).sorted
-assert packages.len > 0
-
-writeFile("fision.nimble", fmt"""
+static:
+  echo packages, "\n", packages.len
+  writeFile("fision.nimble", fmt"""
 requires "nim >= { NimVersion }",
-  { packages.join(",\n  ") }
+  { packages }
 #END { CompileDate }T{ CompileTime }
 
 version     = "{ CompileDate.replace("-", ".") }"
