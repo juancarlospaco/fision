@@ -24,7 +24,6 @@ requires "nim >= 1.2.2",
   "iterutils",
   "jstin",
   "karax",
-  "kdtree",
   "loopfusion",
   "macroutils",
   "markdown",
@@ -70,7 +69,7 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:42:06
+#END 2020-06-22T07:45:47
 
 version     = "2020.06.22"
 author      = "Juan Carlos"
