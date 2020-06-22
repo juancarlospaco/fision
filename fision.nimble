@@ -56,7 +56,6 @@ requires "nim >= 1.2.2",
   "synthesis",
   "tempdir",
   "templates",
-  "tensordsl",
   "terminaltables",
   "termstyle",
   "timeit",
@@ -68,7 +67,7 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:49:42
+#END 2020-06-22T07:51:56
 
 version     = "2020.06.22"
 author      = "Juan Carlos"
