@@ -1,7 +1,7 @@
 import strutils, sequtils, algorithm, strformat
 
 const
-  blockList = ["\"comprehension\"", "\"with\"", "\"kdtree\"", "\"snip\""]  # Packages flaky to install.
+  blockList = ["\"comprehension\"", "\"with\"", "\"kdtree\"", "\"snip\"", "\"tensordsl\""]  # Packages flaky to install.
   url = "https://raw.githubusercontent.com/nim-lang/Nim/devel/testament/important_packages.nim"
   code = staticExec("curl " & url).strip.splitLines
   pkgs = filterIt(code, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true")))
