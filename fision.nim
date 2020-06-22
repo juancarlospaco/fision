@@ -8,7 +8,7 @@ static:
     packages = block:
       var result: seq[string]
       for it in filterIt(code, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true"))):
-        var temp = it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "")
+        var temp = it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip
         if temp notin blockList:
           result.add "  " & temp
       echo result.len
