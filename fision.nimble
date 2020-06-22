@@ -51,7 +51,6 @@ requires "nim >= 1.2.2",
   "rosencrantz",
   "sdl1",
   "sdl2_nim",
-  "snip",
   "stint",
   "strslice",
   "synthesis",
@@ -69,7 +68,7 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:45:47
+#END 2020-06-22T07:49:42
 
 version     = "2020.06.22"
 author      = "Juan Carlos"
