@@ -10,12 +10,12 @@ static:
       for it in filterIt(code, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true"))):
         var temp = it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip
         if temp notin blockList:
-          result.add "  " & temp
+          result.add temp
       echo result.len
-      result.sorted.join(",\n")
+      result.sorted.join(",\n  ")
   when code.len > 0 and  packages.len > 0: writeFile("fision.nimble", fmt"""
 requires "nim >= { NimVersion }",
-{packages}
+  {packages}
 #END { CompileDate }T{ CompileTime }
 
 version     = "{ CompileDate.replace("-", ".") }"
