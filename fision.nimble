@@ -72,7 +72,8 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-# 2020-06-22T05:25:59
+#END 2020-06-22T05:40:39
+
 version     = "2020.06.22"
 author      = "Juan Carlos"
 description = "Official important_packages with 0 dependencies and all unittests passing"
