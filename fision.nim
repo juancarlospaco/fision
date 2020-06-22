@@ -2,15 +2,14 @@ import strutils, sequtils, algorithm, strformat
 
 static:
   const
-    blockList = ["comprehension"] # Packages with problems to install of some kind.
+    blockList = ["comprehension", "with"] # Packages with problems to install of some kind.
     url = "https://raw.githubusercontent.com/nim-lang/Nim/devel/testament/important_packages.nim"
     code = staticExec("curl " & url).strip.splitLines
     packages = block:
       var result: seq[string]
       for it in filterIt(code, (it.startsWith("pkg1 ") or it.startsWith("pkg2 ")) and (it.contains(", false") or not it.contains(", true"))):
-        var temp = it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip
-        if temp notin blockList:
-          result.add temp
+        result.add it.toLowerAscii.split(", false" )[0].replace("pkg1 ", "").replace("pkg2 ", "").strip
+      result = filterIt(result, it notin blockList)
       echo result.len
       result.sorted.join(",\n  ")
   when code.len > 0 and  packages.len > 0: writeFile("fision.nimble", fmt"""
