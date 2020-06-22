@@ -70,7 +70,7 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:33:19
+#END 2020-06-22T07:42:06
 
 version     = "2020.06.22"
 author      = "Juan Carlos"
