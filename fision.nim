@@ -9,7 +9,7 @@ const
   packages = filterIt(fltr, it notin blockList).sorted.join(",\n  ")
 
 static:
-  echo packages, "\n", packages.len
+  echo packages
   writeFile("fision.nimble", fmt"""
 requires "nim >= { NimVersion }",
   { packages }
