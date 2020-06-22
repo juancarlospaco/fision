@@ -1,4 +1,4 @@
-name: Build
+name: Fully Automated Luxury Fision
 
 on:
   schedule:
