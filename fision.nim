@@ -14,8 +14,7 @@ static:
   writeFile("fision.nimble", fmt"""
 requires "nim >= { NimVersion }",
 {packages}
-
-
+# { CompileDate }T{ CompileTime }
 version     = "{ CompileDate.replace("-", ".") }"
 author      = "Juan Carlos"
 description = "Official important_packages with 0 dependencies and all unittests passing"
