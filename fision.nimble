@@ -1,5 +1,4 @@
 requires "nim >= 1.2.4",
-  ",
   "argparse",
   "ast_pattern_matching",
   "bigints",
