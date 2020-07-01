@@ -1,4 +1,5 @@
-requires "nim >= 1.2.2",
+requires "nim >= 1.2.4",
+  ",
   "argparse",
   "ast_pattern_matching",
   "bigints",
@@ -43,7 +44,6 @@ requires "nim >= 1.2.2",
   "patty",
   "pnm",
   "polypbren",
-  "pylib",
   "rbtree",
   "react",
   "result",
@@ -67,9 +67,9 @@ requires "nim >= 1.2.2",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-06-22T07:51:56
+#END 2020-07-01T00:09:30
 
-version     = "2020.06.22"
+version     = "2020.07.01"
 author      = "Juan Carlos"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
