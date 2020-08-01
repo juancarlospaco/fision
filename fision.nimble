@@ -1,6 +1,5 @@
-requires "nim >= 1.2.4",
+requires "nim >= 1.2.6",
   "argparse",
-  "ast_pattern_matching",
   "bigints",
   "binaryheap",
   "bipbuffer",
@@ -30,7 +29,6 @@ requires "nim >= 1.2.4",
   "memo",
   "msgpack4nim",
   "nake",
-  "nesm",
   "nicy",
   "nigui",
   "nimcrypto",
@@ -43,6 +41,7 @@ requires "nim >= 1.2.4",
   "patty",
   "pnm",
   "polypbren",
+  "pylib",
   "rbtree",
   "react",
   "result",
@@ -66,9 +65,9 @@ requires "nim >= 1.2.4",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-07-01T00:09:30
+#END 2020-08-01T00:11:13
 
-version     = "2020.07.01"
+version     = "2020.08.01"
 author      = "Juan Carlos"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
