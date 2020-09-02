@@ -1,6 +1,6 @@
 requires "nim >= 1.2.6",
   "argparse",
-  "bigints", url = "https://github.com/araq/nim-bigints",
+  "bigints",
   "binaryheap",
   "bipbuffer",
   "c2nim",
