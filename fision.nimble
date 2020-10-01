@@ -1,6 +1,6 @@
 requires "nim >= 1.2.6",
   "argparse",
-  "bigints",
+  "bigints", url = "https://github.com/araq/nim-bigints",
   "binaryheap",
   "bipbuffer",
   "c2nim",
@@ -65,9 +65,9 @@ requires "nim >= 1.2.6",
   "ws",
   "yaml",
   "zero_functional"
-#END 2020-09-01T00:13:51
+#END 2020-10-01T00:15:08
 
-version     = "2020.09.01"
+version     = "2020.10.01"
 author      = "Juan Carlos"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
