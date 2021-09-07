@@ -6,7 +6,7 @@ const
   code = staticExec("curl " & url).strip.splitLines
   pkgs = filterIt(code, it.startsWith"pkg " and not it.contains"allowFailure")
   fltr = map(pkgs, proc(s: string): string = s.toLowerAscii.split(", ")[0].replace("pkg ", "").strip)
-  packages = filterIt(fltr, it notin blockList and it.len > 0).sorted.join ",\n"
+  packages = filterIt(fltr, it notin blockList and it.len > 0).sorted.join ",\n  "
 
 static:
   echo packages
