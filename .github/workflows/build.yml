@@ -1,8 +1,8 @@
 name: Fully Automated Luxury Fision
 
-on: push
-  # schedule:
-  #   - cron: "0 0 1 * *"
+on:
+  schedule:
+    - cron: "0 0 1 * *"
 
 jobs:
   build:
