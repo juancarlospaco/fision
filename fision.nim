@@ -6,17 +6,16 @@ const
   code = staticExec("curl " & url).strip.splitLines
   pkgs = filterIt(code, it.startsWith"pkg " and not it.contains"allowFailure")
   fltr = map(pkgs, proc(s: string): string = s.toLowerAscii.split(", ")[0].replace("pkg ", "").strip)
-  packages = filterIt(fltr, it notin blockList and it.len > 0).sorted.join ",\n  "
+  packages = filterIt(fltr, it notin blockList and it.len > 0).sorted.join "\t,\n  "
 
 static:
   echo packages
   writeFile("fision.nimble", fmt"""
 requires "nim >= { NimVersion }",
   { packages }
-#END { CompileDate }T{ CompileTime }
 
 version     = "{ CompileDate.replace("-", ".") }"
-author      = "Juan Carlos"
+author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
 """)
