@@ -1,4 +1,4 @@
-requires "nim >= 1.4.0",
+requires "nim >= 1.4.8",
   "argparse",
   "arraymancer", "nim c tests/tests_cpu.nim",
   "awk",
