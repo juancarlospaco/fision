@@ -1,4 +1,4 @@
-requires "nim >= 1.6.0",
+requires "nim >= 1.6.2",
   "argparse",
   "asyncthreadpool",
   "awk",
@@ -12,6 +12,7 @@ requires "nim >= 1.6.0",
   "cello",
   "chroma",
   "chronicles",
+  "chronos",
   "cligen",
   "combparser",
   "compactdict",
@@ -21,7 +22,6 @@ requires "nim >= 1.6.0",
   "docopt",
   "easygl",
   "elvis",
-  "fidget",
   "fragments",
   "fusion",
   "gara",
@@ -94,7 +94,7 @@ requires "nim >= 1.6.0",
   "synthesis",
   "telebot",
   "tempdir",
-  "templates,
+  "templates",
   "terminaltables",
   "termstyle",
   "timeit",
@@ -109,7 +109,7 @@ requires "nim >= 1.6.0",
   "zero_functional",
   "zippy"
 
-version     = "2021.10.01"
+version     = "2022.01.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
