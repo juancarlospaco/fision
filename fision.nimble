@@ -1,5 +1,6 @@
 requires "nim >= 1.6.2",
   "argparse",
+  "arraymancer",
   "asyncthreadpool",
   "awk",
   "binaryheap",
@@ -22,7 +23,7 @@ requires "nim >= 1.6.2",
   "docopt",
   "easygl",
   "elvis",
-  "fragments",
+  "fidget",
   "fusion",
   "gara",
   "ggplotnim",
@@ -45,6 +46,7 @@ requires "nim >= 1.6.2",
   "msgpack4nim",
   "nake",
   "neo",
+  "nesm",
   "netty",
   "nicy",
   "nigui",
@@ -103,13 +105,14 @@ requires "nim >= 1.6.2",
   "unicodedb",
   "unicodeplus",
   "unpack",
+  "weave",
   "websocket",
   "winim",
   "yaml",
   "zero_functional",
   "zippy"
 
-version     = "2022.01.01"
+version     = "2022.02.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
