@@ -111,7 +111,7 @@ requires "nim >= 1.6.4",
   "zero_functional",
   "zippy"
 
-version     = "2022.03.01"
+version     = "2022.04.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
