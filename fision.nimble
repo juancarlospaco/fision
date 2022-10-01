@@ -1,4 +1,4 @@
-requires "nim >= 1.6.6",
+requires "nim >= 1.6.8",
   "argparse",
   "arraymancer",
   "asyncthreadpool",
@@ -47,7 +47,6 @@ requires "nim >= 1.6.6",
   "nake",
   "neo",
   "nesm",
-  "netty",
   "nicy",
   "nigui",
   "nimcrypto",
@@ -56,7 +55,6 @@ requires "nim >= 1.6.6",
   "nimfp",
   "nimgame2",
   "nimgen",
-  "nimlsp",
   "nimly",
   "nimpy",
   "nimquery",
@@ -111,7 +109,7 @@ requires "nim >= 1.6.6",
   "zero_functional",
   "zippy"
 
-version     = "2022.09.01"
+version     = "2022.10.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
