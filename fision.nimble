@@ -1,8 +1,9 @@
-requires "nim >= 1.6.8",
+requires "nim >= 1.6.10",
   "alea",
   "argparse",
   "arraymancer",
   "ast_pattern_matching",
+  "asyncftpclient",
   "asyncthreadpool",
   "awk",
   "binaryheap",
@@ -93,11 +94,13 @@ requires "nim >= 1.6.8",
   "sdl2_nim",
   "sigv4",
   "sim",
+  "stew",
   "stint",
   "strslice",
   "strunicode",
   "supersnappy",
   "synthesis",
+  "taskpools",
   "telebot",
   "tempdir",
   "templates",
@@ -116,7 +119,7 @@ requires "nim >= 1.6.8",
   "zero_functional",
   "zippy"
 
-version     = "2022.11.01"
+version     = "2022.12.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
