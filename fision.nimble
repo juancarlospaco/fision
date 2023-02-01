@@ -10,7 +10,6 @@ requires "nim >= 1.6.10",
   "bipbuffer",
   "bncurve",
   "brainfuck",
-  "bump",
   "c2nim",
   "cascade",
   "cello",
@@ -68,9 +67,7 @@ requires "nim >= 1.6.10",
   "nimsl",
   "nimsvg",
   "nimterop",
-  "nimwc",
   "nitter",
-  "norm",
   "npeg",
   "numericalnim",
   "optionsutils",
@@ -94,6 +91,7 @@ requires "nim >= 1.6.10",
   "sdl2_nim",
   "sigv4",
   "sim",
+  "smtp",
   "stew",
   "stint",
   "strslice",
@@ -119,7 +117,7 @@ requires "nim >= 1.6.10",
   "zero_functional",
   "zippy"
 
-version     = "2022.12.01"
+version     = "2023.02.01"
 author      = "Juan_Carlos.nim"
 description = "important_packages with 0 dependencies and all unittests passing"
 license     = "MIT"
